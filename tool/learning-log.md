@@ -14,11 +14,16 @@ Project: **Grading App**
 * You need to create a reference to make a structure for database
 
 
-X/X/X:
-* Text
+11/19/23:
+* You can use firebase to login with username and password, or with a google account using built in `auth` module
+* https://youtu.be/9bXhf_TELP4?si=CKlD8dSdjkFUh6wN
+* You can change react routes based on the `auth` state in firebase
+* https://youtu.be/PKwu15ldZ7k?si=_GW-RKQ96np13LlQ
+* I followed along to the video above and modified the content displayed when the user is logged in
+* I am going to next try making a full stack app with firebase and react to use what I have learned
 
 
-<!-- 
+<!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
 * Challenges, a-ha moments, etc
