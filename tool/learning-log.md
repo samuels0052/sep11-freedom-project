@@ -22,7 +22,24 @@ Project: **Grading App**
 * I followed along to the video above and modified the content displayed when the user is logged in
 * I am going to next try making a full stack app with firebase and react to use what I have learned
 
+12/03/23:
+* Watched this [video](https://youtu.be/dx_gkSb-Ch0?si=aesM9zS1EsZ2fAvO) on firebase rules
+* if `.read` rule is false you can't access the database
+* if `.write` rule is false you can read data but can't modify
+* can have child rules where the read and write information is different depending on the user
+* you can use `.uid` to have more secure rules
+```json
+{
+    "rules": {
+        "users": {
+            "$user": {
+                "read": '$user == "Bob"'
+            }
+        }
+    }
+}
 
+```
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
