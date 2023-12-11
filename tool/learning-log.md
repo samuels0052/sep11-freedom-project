@@ -38,8 +38,14 @@ Project: **Grading App**
         }
     }
 }
-
 ```
+
+12/10/23:
+* Learned about structuring data using child nodes
+* Organize and structure data by nesting objects inside other objects
+* You can use `.ref('name of parent node')` to get all the child nodes
+* You can use `.child('name of child node')` to get specific node
+* Went over previous concepts to better understand what I learned
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
