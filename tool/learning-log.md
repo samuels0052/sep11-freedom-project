@@ -46,6 +46,20 @@ Project: **Grading App**
 * You can use `.ref('name of parent node')` to get all the child nodes
 * You can use `.child('name of child node')` to get specific node
 * Went over previous concepts to better understand what I learned
+
+12/17/23:
+* You can prevent users from going to specific routes by using Route Protection
+* Made a test website where you have to login to get access to a page by following a tutorial
+* https://youtu.be/PngrpszT3aY?si=Q2iPQ5u2uB3dUY-N
+```js
+import { Navigate } from "react-router-dom";
+
+export const ProtectedRoute = ({children, user}) => {
+    console.log(user);
+    return user ? children : <Navigate to="/private"></Navigate>;
+};
+
+```
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
