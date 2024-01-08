@@ -60,6 +60,12 @@ export const ProtectedRoute = ({children, user}) => {
 };
 
 ```
+
+1/07/24:
+* Learned about setting up backup buckets
+* Created backups for test projects
+* You can use a single command to backup database using `gcloud beta firestore export gs://[name]`
+* https://www.youtube.com/watch?v=iWEgpdVSZyg
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
