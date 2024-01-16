@@ -66,6 +66,15 @@ export const ProtectedRoute = ({children, user}) => {
 * Created backups for test projects
 * You can use a single command to backup database using `gcloud beta firestore export gs://[name]`
 * https://www.youtube.com/watch?v=iWEgpdVSZyg
+
+1/14/24:
+* I watched a tutorial on firebase authentication
+* I followed along by changing the variables and modifying the HTML in react
+* I learned more about firebase authentication and also how to allow password resets
+* I learned more about how to hide elements unless a condition is reached
+* https://youtu.be/PKwu15ldZ7k?si=sE5aNEtIQedHkwOK
+`{currentUser && currentUser.email}`
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
