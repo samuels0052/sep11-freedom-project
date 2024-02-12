@@ -2,8 +2,18 @@
 ##### 02/11/24
 
 ### Content:
+Because of all the challenging components of Firebase, I have decided to slow down and focus on just a few specific details at a time so that I can better learn this tool. My main focus has been on learning how to work with **inserting and reading** data in a Firebase real-time database.
 
+To do this, I have been watching videos such as this [one](https://youtu.be/pP7quzFmWBY?si=bxqmcn_iWVsOl22Z) on how to manipulate data. I started off by learning how to structure my data in the most efficient way by using a **JSON** tree file structure with different reference points depending on the information. For example, if the data is talking about colors, I might have a **primary/** and a **secondary/** reference to keep things more organized and fast because there is less data to parse through. I have also learned about the **snapshot** method, which allows you to read a specific piece of information by looking at the reference provided as well as an ID. To learn more about snapshots, I read this [this](https://firebase.google.com/docs/reference/node/firebase.database.DataSnapshot) article. Here I learned you need to use the *value* function to read anything. For example:
 
+```js
+const a = firebase.database().ref();
+a.once("value")
+  .then(function(snapshot) {
+    var key = snapshot.key;
+    var childKey = snapshot.child("colors/primary").key;
+  });
+```
 
 The next part of my tool that I plan on learning is [Cloud Functions](https://firebase.google.com/docs/functions) which allows you to create a backend for your application without a dedicated server. This will be very useful for my project because I won't have to worry about finding the machine to host code and how to sync things up when something updates or needs to be changed. This would also be useful because there is one less thing to maintain, which will allow my team to focus more on getting the website done instead of hardware and server maintenance, which can take a lot of time, especially if you miss configuring something. One less thing to mess up will be a huge time saver.
 
