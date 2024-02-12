@@ -75,6 +75,20 @@ export const ProtectedRoute = ({children, user}) => {
 * https://youtu.be/PKwu15ldZ7k?si=sE5aNEtIQedHkwOK
 `{currentUser && currentUser.email}`
 
+2/05/24:
+* Learned about react Effect Hook
+* https://legacy.reactjs.org/docs/hooks-effect.html
+* Allows you to create code that updates without having to reload the whole page and perserves the content
+```js
+const [count, setCount] = useState(0);
+```
+
+2/10/12:
+* https://youtu.be/-yrnWnN0g9o?si=ddG97tL_p3syFVKf
+* Learned that need to establish connection and then use react's *useEffect()* to check for firebase changes
+* *collectionRef* is what allows you to check for specific collection or table of database
+* I am next going to create a small full stack app as a reference tool for main project
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
