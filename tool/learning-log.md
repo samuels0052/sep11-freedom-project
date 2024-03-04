@@ -83,11 +83,30 @@ export const ProtectedRoute = ({children, user}) => {
 const [count, setCount] = useState(0);
 ```
 
-2/10/12:
+2/10/24:
 * https://youtu.be/-yrnWnN0g9o?si=ddG97tL_p3syFVKf
 * Learned that need to establish connection and then use react's *useEffect()* to check for firebase changes
 * *collectionRef* is what allows you to check for specific collection or table of database
 * I am next going to create a small full stack app as a reference tool for main project
+
+3/4/24:
+* I have been learning flexbox to help with the visual design of project
+* `display: flex` activates flexbox
+* `flex-direction` determines the direction elements are going to be aligned to, either vertically or horizontally
+* If you want things to adjust when screen gets too small you can use `flex-wrap` so elements are responsive
+* You use `justify-content` for main axis and `align-items` for cross axis
+* You can put a space between elements using `gap` property
+* https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-flexbox-properties
+* https://www.youtube.com/watch?v=3YW65K6LcIA
+```css
+.about .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem 2rem 5rem 2rem;
+    gap: 3rem;
+}
+```
 
 <!--
 * Links you used today (websites, videos, etc)
