@@ -108,6 +108,56 @@ const [count, setCount] = useState(0);
 }
 ```
 
+3/10/24:
+* You can use Discord Webhooks in support forms to avoid using email services
+* Discord Webhooks allow you to send messages to a specific channel in a discord Server
+* You can send using a post request in the form of a JSON body structure
+* You can ping a user in the format of `<@{User ID}>` for example `<@503673006766161930>`
+* https://birdie0.github.io/discord-webhooks-guide/discord_webhook.html
+```js
+function handleSubmit(event) {
+    event.preventDefault();
+    let rawName = document.querySelector('#sf-name').value;
+    let rawEmail = document.querySelector('#sf-email').value;
+    let rawSubject = document.querySelector('#sf-subject').value;
+    let rawMessage = document.querySelector('#sf-message').value;
+
+    if(rawMessage.length < 4096) {
+        const url = "https://discord.com/api/webhooks/1234567890/dh29s81a028sj32sxa"
+
+        const data = {
+            "content": "<@503673006766161930>",
+            "embeds": [{
+                "title": "New Ticket!",
+                "description": rawMessage,
+                "color": 11590065,
+                "fields": [
+                    {
+                        "name": "Name:",
+                        "value": rawName,
+                        "inline": false
+                    },
+                ],
+            }]
+        }
+
+        const options = {
+            "method": 'POST',
+            "headers": {
+                'Content-Type': 'application/json'
+            },
+            "body": JSON.stringify(data)
+        }
+
+        fetch(url, options)
+        alert("Your message has been sent!")
+    } else {
+        alert("Your message is too long! Must be under 4096 characters!")
+    }
+    document.querySelector('form').reset();
+}
+```
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
