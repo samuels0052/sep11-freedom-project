@@ -158,6 +158,13 @@ function handleSubmit(event) {
 }
 ```
 
+3/17/24:
+* Protected routes allow you to hide a page if user is not authenticated
+* You need to create a seperate authentication component and then pass it as an attribute in the route for the private page
+* Need to use `useEffect` method to update auth state
+* `<Route path="/data" element={<ProtectedRoute user={user}><Private></Private></ProtectedRoute>}`
+* https://youtu.be/PngrpszT3aY?si=-yBKndcHkeP3HVzf
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
