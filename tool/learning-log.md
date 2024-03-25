@@ -165,6 +165,23 @@ function handleSubmit(event) {
 * `<Route path="/data" element={<ProtectedRoute user={user}><Private></Private></ProtectedRoute>}`
 * https://youtu.be/PngrpszT3aY?si=-yBKndcHkeP3HVzf
 
+3/24/24:
+* You can add params to React functions just like normal JS functions
+* Have to put parms in `{}` within the `()` of the function
+* When using the component you need to set the attribute as the param you are trying to call
+* If you want to change the title of a page you need to use `document.title` within the function for it to dynamically update when changing the page
+```js
+export default function NoPage({title}) {
+    document.title = title;
+    return (
+        <h1>error 404 page</h1>
+    );
+}
+```
+```js
+<Route path="*" element={<NoPage title={errorPageTitle}/>} />
+```
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
