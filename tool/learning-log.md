@@ -182,6 +182,13 @@ export default function NoPage({title}) {
 <Route path="*" element={<NoPage title={errorPageTitle}/>} />
 ```
 
+4/7/24:
+* You can have multiple people working on the same FireBase project by adding them as a collaborator in project settings
+* If you assign someone as owner they can add different components of firebase to the project such as `realtime database`
+* If you assign someone as an editor they can only modify what already exists
+* If you assign someone as a viewer they can't make any changes to the project
+![](../img/firebase-collab.png)
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
