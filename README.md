@@ -8,15 +8,29 @@ For my project, I chose to independently study **Firebase** in order to help me 
 
 ## Links
 
-[Product]()
+[Product](https://ricegrades.pages.dev/)
 
-[Presentation]()
+[Presentation](https://docs.google.com/presentation/d/10r7JFUaxKtKdIs_Ju72QNLV1952PvyiYNwpBOuXqGt8/edit?usp=sharing)
 
 ## Implications
 ##### PROS
-* 
+* Global
+    * More schools would have access to a simple free grading application, which would improve efficacy and accessibility for schools to dedicate more time to students.
+* Governments / Laws
+    * Some governments might consider using our platform for their local education districts.
+* Social
+    * Students are able to freely communicate with one another about their grades thanks to our simple platform.
+* Individual
+    * Students are motivated to get high grades to access our built in reward games.
+* Culture
+    * We are creating a culture of students who want to have high grades, which will positively impact society since students are going to be learning more materials and studying harder.
 ##### CONS
-* 
+* Environment / Infrastructure
+    * Our project requires high performance servers to give the best user experience, which requires a lot of electrical power, which could negatively impact the environment depending on the energy system of the data center.
+* Reationships
+    * Adding new features and fixing bugs takes a lot of time, which causes the developers to lose their social lives and not be as free to hang out with their friends.
+* Jobs / Economic
+    * Our project is in direct competition with other grading platforms, which could put jobs at risk.
 
 
 ## Blog
